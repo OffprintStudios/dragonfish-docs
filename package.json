@@ -24,6 +24,7 @@
     "rxjs": "^6.6.3",
     "svelte": "^3.0.0",
     "svelte-check": "^1.0.0",
+    "svelte-feather-icons": "^3.3.0",
     "svelte-preprocess": "^4.0.0",
     "svelte-preprocess-less": "^0.4.0",
     "tslib": "^2.0.0",

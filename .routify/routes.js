@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.12.4
- * File generated Fri Feb 12 2021 19:02:09 GMT-0800 (Pacific Standard Time)
+ * File generated Fri Feb 12 2021 20:50:39 GMT-0800 (Pacific Standard Time)
  */
 
 export const __version = "2.12.4"
-export const __timestamp = "2021-02-13T03:02:09.685Z"
+export const __timestamp = "2021-02-13T04:50:39.299Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
@@ -48,6 +48,55 @@ export const _tree = {
       "path": "/about",
       "id": "_about",
       "component": () => import('../src/pages/about.svx').then(m => m.default)
+    },
+    {
+      "isFile": false,
+      "isDir": true,
+      "file": "api",
+      "filepath": "/api",
+      "name": "api",
+      "ext": "",
+      "badExt": false,
+      "absolutePath": "/Users/alyx/Projects/dragonfish-docs/src/pages/api",
+      "children": [
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "index.svelte",
+          "filepath": "/api/index.svelte",
+          "name": "index",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "/Users/alyx/Projects/dragonfish-docs/src/pages/api/index.svelte",
+          "importPath": "../src/pages/api/index.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": true,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/api/index",
+          "id": "_api_index",
+          "component": () => import('../src/pages/api/index.svelte').then(m => m.default)
+        }
+      ],
+      "isLayout": false,
+      "isReset": false,
+      "isIndex": false,
+      "isFallback": false,
+      "isPage": false,
+      "ownMeta": {},
+      "meta": {
+        "recursive": true,
+        "preload": false,
+        "prerender": true
+      },
+      "path": "/api"
     },
     {
       "isFile": true,

@@ -1,6 +1,11 @@
 <script lang="ts">
+    import { Router } from '@roxi/routify';
+    import { routes } from '../.routify/routes';
+
 	export let name: string;
 </script>
+
+<Router {routes}></Router>
 
 <main>
 	<h1>Hello {name}!</h1>

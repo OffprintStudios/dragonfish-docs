@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.12.4
- * File generated Fri Feb 12 2021 21:40:25 GMT-0800 (Pacific Standard Time)
+ * File generated Sat Feb 13 2021 01:20:13 GMT-0800 (Pacific Standard Time)
  */
 
 export const __version = "2.12.4"
-export const __timestamp = "2021-02-13T05:40:25.327Z"
+export const __timestamp = "2021-02-13T09:20:13.694Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
@@ -50,28 +50,28 @@ export const _tree = {
       "component": () => import('../src/pages/about.svx').then(m => m.default)
     },
     {
-      "isFile": false,
+      "isFile": true,
       "isDir": true,
-      "file": "api",
-      "filepath": "/api",
-      "name": "api",
-      "ext": "",
+      "file": "_layout.svelte",
+      "filepath": "/api/_layout.svelte",
+      "name": "_layout",
+      "ext": "svelte",
       "badExt": false,
-      "absolutePath": "/Users/alyx/Projects/dragonfish-docs/src/pages/api",
+      "absolutePath": "/Users/alyx/Projects/dragonfish-docs/src/pages/api/_layout.svelte",
       "children": [
         {
           "isFile": true,
           "isDir": false,
-          "file": "index.svelte",
-          "filepath": "/api/index.svelte",
-          "name": "index",
+          "file": "introduction.svelte",
+          "filepath": "/api/introduction.svelte",
+          "name": "introduction",
           "ext": "svelte",
           "badExt": false,
-          "absolutePath": "/Users/alyx/Projects/dragonfish-docs/src/pages/api/index.svelte",
-          "importPath": "../src/pages/api/index.svelte",
+          "absolutePath": "/Users/alyx/Projects/dragonfish-docs/src/pages/api/introduction.svelte",
+          "importPath": "../src/pages/api/introduction.svelte",
           "isLayout": false,
           "isReset": false,
-          "isIndex": true,
+          "isIndex": false,
           "isFallback": false,
           "isPage": true,
           "ownMeta": {},
@@ -80,23 +80,26 @@ export const _tree = {
             "preload": false,
             "prerender": true
           },
-          "path": "/api/index",
-          "id": "_api_index",
-          "component": () => import('../src/pages/api/index.svelte').then(m => m.default)
+          "path": "/api/introduction",
+          "id": "_api_introduction",
+          "component": () => import('../src/pages/api/introduction.svelte').then(m => m.default)
         }
       ],
-      "isLayout": false,
+      "isLayout": true,
       "isReset": false,
       "isIndex": false,
       "isFallback": false,
       "isPage": false,
+      "importPath": "../src/pages/api/_layout.svelte",
       "ownMeta": {},
       "meta": {
         "recursive": true,
         "preload": false,
         "prerender": true
       },
-      "path": "/api"
+      "path": "/api",
+      "id": "_api__layout",
+      "component": () => import('../src/pages/api/_layout.svelte').then(m => m.default)
     },
     {
       "isFile": true,

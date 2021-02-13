@@ -6,7 +6,7 @@
     const version = getContext('version');
     const links = [
         ['./index', 'home'],
-        ['./api', 'api'],
+        ['./api/introduction', 'api'],
         ['./about', 'about'],
     ];
 </script>
@@ -28,7 +28,6 @@
     nav {
         width: 100%;
         background: linear-gradient(90deg, var(--accent), var(--accent-hover));
-        border-bottom: 1px solid rgba(255, 62, 0, 0.1);
         box-shadow: var(--dropshadow);
         margin-bottom: 2.5rem;
 

@@ -35,15 +35,4 @@
         color: var(--accent);
         text-decoration: none;
     }
-
-    :global(.container) {
-        max-width: var(--max-width);
-        margin: 0 auto;
-    }
-
-    @media(max-width: 900px) {
-        :global(.container) {
-            max-width: var(--max-width-mobile);
-        }
-    }
 </style>

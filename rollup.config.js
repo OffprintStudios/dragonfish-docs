@@ -1,4 +1,5 @@
 import svelte from 'rollup-plugin-svelte';
+import { mdsvex } from 'mdsvex';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
@@ -40,7 +41,11 @@ export default {
 	},
 	plugins: [
 		svelte({
-			preprocess: sveltePreprocess({ sourceMap: !production }),
+            extensions: ['.svelte', '.svx'],
+			preprocess: [
+                mdsvex(),
+                sveltePreprocess({ sourceMap: !production }),
+            ],
 			compilerOptions: {
 				// enable run-time checks when not in production
 				dev: !production

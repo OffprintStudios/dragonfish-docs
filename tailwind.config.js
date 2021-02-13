@@ -2,15 +2,12 @@ const isProduction = !process.env.ROLLUP_WATCH;
 
 module.exports = {
     purge: {
-        content: [
-            "./src/**/*.svelte",
-        ],
-        defaultExtractor: content => {
-            const broadMatches = content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || []
-            const broadMatchesWithoutTrailingSlash = broadMatches.map(match => _.trimEnd(match, '\\'))
-            const matches = broadMatches
-              .concat(broadMatchesWithoutTrailingSlash)
-            return matches
+        content: ['./src/**/*.svelte'],
+        defaultExtractor: (content) => {
+            const broadMatches = content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || [];
+            const broadMatchesWithoutTrailingSlash = broadMatches.map((match) => _.trimEnd(match, '\\'));
+            const matches = broadMatches.concat(broadMatchesWithoutTrailingSlash);
+            return matches;
         },
         enabled: isProduction,
     },
@@ -21,7 +18,5 @@ module.exports = {
     variants: {
         extend: {},
     },
-    plugins: [
-        require('@tailwindcss/ui'),
-    ],
-}
+    plugins: [require('@tailwindcss/ui')],
+};

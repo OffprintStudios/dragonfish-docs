@@ -14,7 +14,7 @@
 <nav>
     <div class="nav-box">
         <h3>DRAGONFISH</h3>
-        <h4>&mdash; ver. { version }</h4>
+        <h4>&mdash; ver. {version}</h4>
         <div class="nav-list">
             <a class="nav-item" href="https://github.com/OffprintStudios/dragonfish"><GithubIcon size="18" /></a>
             {#each links.reverse() as [path, name]}

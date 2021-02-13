@@ -49,11 +49,7 @@ export default {
                     sourceMap: !production,
                     less: less(),
                     postcss: {
-                        plugins: [
-                            require('tailwindcss'),
-                            require('autoprefixer'),
-                            require('postcss-nesting'),
-                        ],
+                        plugins: [require('tailwindcss'), require('autoprefixer'), require('postcss-nesting')],
                     },
                 }),
             ],

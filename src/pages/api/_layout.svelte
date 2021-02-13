@@ -8,7 +8,7 @@
             <ApiNav />
         </div>
         <div class="nine columns">
-            <slot></slot>
+            <slot />
         </div>
     </div>
 </div>

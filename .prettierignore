@@ -3,3 +3,4 @@ node_modules
 .vscode
 README.md
 yarn.lock
+yarn-error.log

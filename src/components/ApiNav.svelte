@@ -5,7 +5,7 @@
 
 <ul class="nav">
     <li>
-        <a href={ $url('./introduction') } class:active={$isActive('./introduction')}>
+        <a href={$url('./introduction')} class:active={$isActive('./introduction')}>
             <span class="link-icon"><InfoIcon size="18" /></span>
             <span class="link-name">Introduction</span>
             <span class="end-point"><ChevronRightIcon size="18" /></span>

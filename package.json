@@ -15,8 +15,10 @@
         "@rollup/plugin-typescript": "^6.0.0",
         "@roxi/routify": "^2.12.4",
         "@tsconfig/svelte": "^1.0.0",
+        "autoprefixer": "^10.2.4",
         "less": "^4.1.1",
         "mdsvex": "^0.8.9",
+        "postcss-nesting": "^7.0.1",
         "prettier": "2.2.1",
         "prettier-plugin-svelte": "^2.1.4",
         "rollup": "^2.3.4",
@@ -30,10 +32,12 @@
         "svelte-feather-icons": "^3.3.0",
         "svelte-preprocess": "^4.0.0",
         "svelte-preprocess-less": "^0.4.0",
+        "tailwindcss": "^2.0.3",
         "tslib": "^2.0.0",
         "typescript": "^3.9.3"
     },
     "dependencies": {
+        "@tailwindcss/ui": "^0.7.2",
         "sirv-cli": "^1.0.0"
     }
 }

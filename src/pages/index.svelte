@@ -1,11 +1,9 @@
 <script lang="ts">
     import { getContext } from 'svelte';
-
-    const version = getContext('version');
 </script>
 
-<div class="container">
-    <h1>Welcome to the Dragonfish Docs!</h1>
-    { version }
+<div class="container mx-auto">
+    <h1 class="text-6xl tracking-widest text-center">DRAGONFISH</h1>
+    <h2 class="text-3xl tracking-wide text-center left-16 relative">それなりに火をつける</h2>
 </div>
 

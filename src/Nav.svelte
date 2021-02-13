@@ -24,7 +24,7 @@
 <style lang="less">
     nav {
         width: 100%;
-        background: linear-gradient(90deg, rgb(179, 63, 47), rgb(223,101,63));
+        background: linear-gradient(90deg, rgb(179, 63, 47), rgb(223, 101, 63));
         border-bottom: 1px solid rgba(255, 62, 0, 0.1);
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         margin-bottom: 2.5rem;
@@ -42,7 +42,6 @@
                 margin: 0;
                 font-weight: 300;
                 letter-spacing: 5px;
-
             }
 
             div.nav-list {
@@ -62,7 +61,7 @@
                     line-height: 32px;
 
                     &.selected {
-                        background:rgb(179, 63, 47);
+                        background: rgb(179, 63, 47);
 
                         &:hover {
                             text-decoration: none;

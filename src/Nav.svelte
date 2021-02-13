@@ -1,7 +1,9 @@
 <script lang="ts">
+    import { getContext } from 'svelte';
     import { url, isActive } from '@roxi/routify';
     import { GithubIcon } from 'svelte-feather-icons';
 
+    const version = getContext('version');
     const links = [
         ['./index', 'home'],
         ['./api', 'api'],
@@ -12,6 +14,7 @@
 <nav>
     <div class="nav-box">
         <h3>DRAGONFISH</h3>
+        <h4>&mdash; ver. { version }</h4>
         <div class="nav-list">
             <a class="nav-item" href="https://github.com/OffprintStudios/dragonfish"><GithubIcon color="whitesmoke" size="18" /></a>
             {#each links.reverse() as [path, name]}
@@ -24,9 +27,9 @@
 <style lang="less">
     nav {
         width: 100%;
-        background: linear-gradient(90deg, rgb(179, 63, 47), rgb(223, 101, 63));
+        background: linear-gradient(90deg, var(--accent), var(--accent-hover));
         border-bottom: 1px solid rgba(255, 62, 0, 0.1);
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: var(--dropshadow);
         margin-bottom: 2.5rem;
 
         div.nav-box {
@@ -34,14 +37,22 @@
             flex-direction: row;
             align-items: center;
             color: whitesmoke;
-            margin: 0 5rem 0 5rem;
+            max-width: var(--max-width);
+            margin: 0 auto;
             font-size: 0;
 
             h3 {
                 font-size: 32px;
                 margin: 0;
+                font-weight: 400;
+                letter-spacing: var(--title-spacing);
+            }
+
+            h4 {
+                font-size: 18px;
                 font-weight: 300;
-                letter-spacing: 5px;
+                font-style: italic;
+                margin: 0;
             }
 
             div.nav-list {
@@ -61,7 +72,7 @@
                     line-height: 32px;
 
                     &.selected {
-                        background: rgb(179, 63, 47);
+                        background: var(--accent);
 
                         &:hover {
                             text-decoration: none;
@@ -71,9 +82,15 @@
 
                     &:hover {
                         text-decoration: none;
-                        background: rgb(179, 63, 47);
+                        background: var(--accent);
                     }
                 }
+            }
+        }
+
+        @media (max-width: 900px) {
+            div.nav-box {
+                max-width: var(--max-width-mobile);
             }
         }
     }

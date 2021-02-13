@@ -44,6 +44,7 @@ export default {
 		svelte({
             extensions: ['.svelte', '.svx'],
 			preprocess: [
+                less(),
                 mdsvex(),
                 sveltePreprocess({ 
                     sourceMap: !production,

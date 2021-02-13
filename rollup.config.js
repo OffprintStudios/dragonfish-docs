@@ -37,7 +37,7 @@ export default {
 	output: {
 		sourcemap: true,
 		format: 'esm',
-        dir: 'public/build',
+        dir: 'public/bundle',
 		name: 'app',
 	},
 	plugins: [
